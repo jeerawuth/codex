@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.todo-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.todo-form input[type="text"] {
+  flex: 1;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.todo-list li.completed label {
+  text-decoration: line-through;
+}
+
+.actions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}
